@@ -1,0 +1,131 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Grâce Divine · Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVBAR AVEC HAMBURGER -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">La Grâce Divine</span>
+        <small>Organisatrice</small>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="prestations.html">Prestations</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li class="nav-social">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Contactez-nous</h1>
+      <p>Une question ? Un projet ? Parlons-en !</p>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-infos">
+          <h2><i class="fas fa-address-card"></i> Nos coordonnées</h2>
+          <div class="contact-item">
+            <i class="fas fa-map-pin"></i>
+            <p>Porto-Novo, Bénin</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p><strong>Appel :</strong> +229 01 67 73 51 93 / +229 01 61 63 83 32</p>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <p><strong>WhatsApp :</strong> <a href="https://wa.me/2290167735193?text=Bonjour%20La%20Gr%C3%A2ce%20Divine" target="_blank">+229 01 67 73 51 93</a> (principal) / <a href="https://wa.me/2290161638332?text=Bonjour" target="_blank">+229 01 61 63 83 32</a></p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:contact@lagracedivine.com">contact@lagracedivine.com</a></p>
+          </div>
+          <div class="contact-item social-icons">
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-tiktok fa-2x"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h2><i class="fas fa-paper-plane"></i> Écrivez-nous</h2>
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" placeholder="+229 01 90 00 00 00" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Décrivez votre événement..." required></textarea>
+          </div>
+          <button type="submit" class="cta-btn" style="width:100%; justify-content:center;">
+            <i class="fas fa-paper-plane"></i> Envoyer
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        La Grâce Divine
+        <small>Organisatrice d'événements · depuis 2018</small>
+      </div>
+      <div class="footer-contacts">
+        <p><i class="fab fa-whatsapp"></i> WhatsApp : <a href="https://wa.me/2290161638332?text=Bonjour%20La%20Gr%C3%A2ce%20Divine" target="_blank">+229 01 61 63 83 32</a></p>
+        <p><i class="fas fa-phone"></i> Appel / WhatsApp : <a href="https://wa.me/2290167735193?text=Bonjour" target="_blank">+229 01 67 73 51 93</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="contact.html">Contact</a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="footer-copy">
+        <i class="fas fa-feather-alt"></i> 2026 · Tous droits réservés
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOTTANT -->
+  <a href="https://wa.me/2290161638332?text=Bonjour%20La%20Gr%C3%A2ce%20Divine" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
